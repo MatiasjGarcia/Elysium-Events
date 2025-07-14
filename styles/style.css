@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: bisque;
+}
+.card-img-overlay{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+/* Main */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(218, 201, 182);
+    gap: 100px;
+    padding: 30px;
+}
+.texto-home{
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    width: 530px;
+}
+
+.servicios-tarjetas{
+display: flex;
+flex-direction: row;
+gap: 100px;
+}
+.card-body{
+    text-align: center;
+}
+
+.contenedor-carrusel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    background-color: antiquewhite;
+}
+.carousel{
+    width: 600px;
+}
+.contenedor-instagram{
+    text-align: center;
+    gap: 100px;
+}
+
+.contenedor-formulario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+.formulario-contacto{
+    padding: 15px;
+    text-align: center;
+}
+.btn-sombra {
+  display: inline-block;       /* Hace que se comporte como botón */
+  background-color: #dfbd80;   /* Color de fondo (rosa Instagram) */
+  color: #fff;                 /* Color del texto */
+  padding: 12px 24px;          /* Espaciado interno */
+  border-radius: 8px;          /* Bordes redondeados */
+  text-decoration: none;       /* Quita subrayado */
+  font-weight: bold;           /* Texto más fuerte */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);  /* SOMBRA visible */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animación suave */
+}
+.btn-sombra:hover {
+  transform: translateY(-3px); /* Efecto de levantarse al pasar el mouse */
+  box-shadow: 0 12px 20px rgba(0,0,0,0.7); /* Sombra más grande al hover */
+}
+
+
+
+@media (max-width: 576px) {
+.servicios-tarjetas{
+    display: flex;
+    flex-direction: column;
+}
+}
