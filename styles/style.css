@@ -16,49 +16,121 @@
 .nav-link:hover {
     color: bisque;
 }
-.card-img-overlay{
+
+.card-img-overlay {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
 /* Main */
-.home{
+.img-inicio {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.img-inicio2 {
+    width: 400px;
+    height: 500px;
+}
+
+.boton-inicio {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(218, 201, 182);
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    background-color: #8f8462;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+
+}
+
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 201, 182);
     gap: 100px;
     padding: 30px;
 }
-.texto-home{
+
+.texto-home {
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     width: 530px;
 }
 
-.servicios-tarjetas{
-display: flex;
-flex-direction: row;
-gap: 100px;
-}
-.card-body{
-    text-align: center;
-}
-
-.contenedor-carrusel{
+.presentacion {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 200px;
-    background-color: antiquewhite;
-}
-.carousel{
-    width: 600px;
-}
-.contenedor-instagram{
-    text-align: center;
-    gap: 100px;
+    gap: 25px;
+    background-color: black;
+    color: #dfbd80;
 }
 
-.contenedor-formulario{
+h2 {
+    text-align: center;
+}
+
+.servicios-tarjetas {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    margin: 35px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card img {
+    height: 400px;
+}
+
+.contenedor-carrusel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousel {
+    width: 600px;
+}
+
+.carousel-inner {
+    height: 500px;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+}
+
+.galeria-img {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.img-gale {
+    width: 300px;
+}
+
+.contenedor-formulario {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -67,31 +139,98 @@ gap: 100px;
     background-color: antiquewhite;
 }
 
-.formulario-contacto{
+.formulario-contacto {
     padding: 15px;
     text-align: center;
 }
+
 .btn-sombra {
-  display: inline-block;       /* Hace que se comporte como botón */
-  background-color: #dfbd80;   /* Color de fondo (rosa Instagram) */
-  color: #fff;                 /* Color del texto */
-  padding: 12px 24px;          /* Espaciado interno */
-  border-radius: 8px;          /* Bordes redondeados */
-  text-decoration: none;       /* Quita subrayado */
-  font-weight: bold;           /* Texto más fuerte */
-  box-shadow: 0 8px 16px rgba(0,0,0,0.6);  /* SOMBRA visible */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animación suave */
+    display: inline-block;
+    background-color: #dfbd80;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .btn-sombra:hover {
-  transform: translateY(-3px); /* Efecto de levantarse al pasar el mouse */
-  box-shadow: 0 12px 20px rgba(0,0,0,0.7); /* Sombra más grande al hover */
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
 }
 
+.redes-contacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
 
+.img-contacto {
+    width: 800px;
+    height: 400px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(32, 31, 30);
+    color: #ffffff;
+}
+
+.enlaces-footer {
+    text-decoration: none;
+    color: #fff;
+}
 
 @media (max-width: 576px) {
-.servicios-tarjetas{
-    display: flex;
-    flex-direction: column;
-}
+    .img-inicio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-inicio2 {
+        width: 100%;
+    }
+
+    .servicios-tarjetas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .texto-home {
+        width: 100%;
+        text-align: center;
+    }
+
+    .img-home {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .galeria-img {
+        flex-direction: column;
+    }
+
+    .contenedor-formulario {
+        flex-direction: column;
+    }
+
+    .img-contacto {
+        width: 100%;
+        height: auto;
+    }
 }
