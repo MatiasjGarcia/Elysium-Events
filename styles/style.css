@@ -191,4 +191,45 @@ footer .enlaces-footer {
   color: #ffffff;
 }
 
+@media (max-width: 576px) {
+  .img-inicio {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-inicio2 {
+    width: 100%;
+  }
+  .servicios-tarjetas {
+    display: flex;
+    flex-direction: column;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .texto-home {
+    width: 100%;
+    text-align: center;
+  }
+  .img-home {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .carousel {
+    width: 100%;
+  }
+  .galeria-img {
+    flex-direction: column;
+  }
+  .contenedor-formulario {
+    flex-direction: column;
+  }
+  .img-contacto {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
