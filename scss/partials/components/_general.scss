@@ -1,0 +1,87 @@
+// GENERALES //
+@use "../utilities/extend";
+
+.boton-inicio {
+    @extend %boton;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 201, 182);
+    gap: 100px;
+    padding: 30px;
+}
+
+.texto-home {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    width: 530px;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: black;
+    color: #dfbd80;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+.contenedor-carrusel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.contenedor-formulario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+.formulario-contacto {
+    padding: 15px;
+    text-align: center;
+}
+
+.btn-sombra {
+    display: inline-block;
+    background-color: #dfbd80;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-sombra:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
+}
+
+.redes-contacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}

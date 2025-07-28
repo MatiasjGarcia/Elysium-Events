@@ -1,0 +1,23 @@
+//CARDS//
+@use "../utilities/mixins";
+
+.card-img-overlay {
+    @include mixins.flex(column, center, center,);
+    text-align: center;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card img {
+    height: 400px;
+}
+
+.servicios-tarjetas {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    margin: 35px;
+}

@@ -1,0 +1,14 @@
+// BASE //
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
+
+// COMPONENTS //
+@use "./partials/components/header";
+@use "./partials/components/general";
+@use "./partials/components/card";
+@use "./partials/components/img";
+@use "./partials/components/footer";
+
+// VARIABLES //
+@use "./partials/utilities/variables";
+@use "./partials/utilities/mixins";

@@ -1,0 +1,22 @@
+/* Header */
+@use "../utilities/variables";
+
+header {
+    .container-fluid {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-link {
+        color: variables.$pure-black;
+
+        .nav-link:hover {
+            color: bisque;
+        }
+
+        .card-img-overlay {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+    }
+
+}

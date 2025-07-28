@@ -1,0 +1,12 @@
+/* Footer */
+@use "../utilities/variables";
+
+footer {
+    background-color: variables.$fondos;
+    color: variables.$the-white;
+
+    .enlaces-footer {
+        text-decoration: none;
+        color: variables.$the-white;
+    }
+}
