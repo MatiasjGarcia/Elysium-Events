@@ -1,6 +1,10 @@
 //CARDS//
 @use "../utilities/mixins";
 
+.card-title{
+    background-color: black;
+}
+
 .card-img-overlay {
     @include mixins.flex(column, center, center,);
     text-align: center;

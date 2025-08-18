@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+  overflow-x: hidden; /* Agregue esto para no tener scroll horizontal (me ayude con el IA para detectar el problema ya que no encontraba porque desbordaba en desktop) */
+}
+
 a{
     text-decoration: none;
     color: black;

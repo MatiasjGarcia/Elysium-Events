@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Agregue esto para no tener scroll horizontal (me ayude con el IA para detectar el problema ya que no encontraba porque desbordaba en desktop) */
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -118,6 +124,10 @@ h2 {
   text-decoration: none;
 }
 
+.card-title {
+  background-color: black;
+}
+
 .card-img-overlay {
   display: flex;
   flex-direction: column;
@@ -207,21 +217,33 @@ footer .enlaces-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
   }
   .texto-home {
-    width: 100%;
+    width: auto;
     text-align: center;
   }
   .img-home {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
+  }
+  .presentacion {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .presentacion .parrafo-home {
+    width: 80%;
+    align-items: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
   .carousel {
     width: 100%;
   }
   .galeria-img {
     flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
   .contenedor-formulario {
     flex-direction: column;
